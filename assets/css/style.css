@@ -19,10 +19,9 @@ body {
 header {
 	float: left;
 	background-color: #4aaaa5;
-	border-bottom: none;
 	color: #ffffff;
 	height: 100%;
-	width: 27%;
+	width: 30%;
 	margin-left: 2%;
 	margin-bottom: 0;
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -31,6 +30,10 @@ header {
 	font-weight: bold;
 	vertical-align: middle;
 	padding-top: 1%;
+}
+
+header:hover{
+	background:#00ff00;
 }
 
 h2,
@@ -199,7 +202,7 @@ footer {
 /* Button turns dark on hover. */
 
 .button:hover {
-	background-color: #374865;
+	background-color: #ffa500;
 }
 
 #services {
@@ -235,11 +238,8 @@ footer {
 }
 
 /* 
-  
 	These rules take effect when the browser's width
-  
 	is 769px or more.
-  
   */
 
 @media screen and (max-width: 980px) {
@@ -248,11 +248,8 @@ footer {
 }
 
 /* 
-  
 	These rules take effect when the browser's width
-  
 	is 641px or more.
-  
   */
 
 @media screen and (max-width: 768px) {
