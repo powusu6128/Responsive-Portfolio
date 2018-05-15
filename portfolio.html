@@ -4,154 +4,266 @@
 
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Document responsive across devices. -->
 
-  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My Portfolio</title>
+	<!-- Latest compiled and minified CSS -->
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	    crossorigin="anonymous">
+	<!-- Document's character set. -->
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<meta charset="UTF-8">
+
+	<title>My Portfolio</title>
+
+	<!-- Linking CSS -->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Linking Google Fonts -->
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
 </head>
 
 <body>
 
-  <div class="header-container">
+	<div class="header">
 
-    <header>Philip Owusu</header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
 
-    <nav>
+			<div class="card">
+				<a href="index.html">
 
-      <ul>
+					<img class="btn btn-primary" src="assets/images/logo.png" alt="logo not available">
 
-        <li class="border">
-          <a href="index.html">About</a>
-        </li>
+				</a>
+			</div>
 
-        <li class="border">
-          <a href="portfolio.html">Portfolio</a>
-        </li>
+			<a href="index.html" class="navbar-brand">
+				<h1>Philip Owusu</h1>
+			</a>
 
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_example">
 
-      </ul>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-    </nav>
+			<div class="navbar-collapse collapse justify-content-stretch" id="navbar_example">
 
-  </div>
+				<ul class="navbar-nav ml-auto">
 
-  <div class="main-container">
+					<li class="nav-link active">
 
-    <section id="project-portfolio">
+						<a class="nav-item" href="index.html">About
+							<span class="sr-only">(current)</span>
+						</a>
 
-      <h2>Portfolio</h2>
+					</li>
 
-      <!-- Using single placeholder image for now. -->
+					<li class="nav-link">
 
-      <ul class="project">
+						<a class="nav-item" href="contact.html">Contact</a>
 
-        <li class="box">
-          <div>
-            <a href="https://github.com/powusu6128/Giphy_App">
-              <img class="project" src="assets/images/handman.jpg" alt="Hangman">
-            </a>
+					</li>
 
-            <span class="project-title">Giphy_App</span>
-          </div>
-        </li>
+					<li class="nav-link">
 
-        <li class="box">
-          <div>
-            <a href="https://github.com/powusu6128/Hangmang-Game">
-              <img class="project" src="assets/images/rpg_game.jpg" alt="RPG Game">
-            </a>
+						<a class="nav-item" href="portfolio.html">Portfolio</a>
 
-            <span class="project-title">HangMan-Game</span>
-          </div>
-        </li>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-        <li class="box">
-          <div>
-            <a href="https://github.com/powusu6128/star-war">
-              <img class="project" src="assets/images/quiz-game.jpg" alt="Star War">
-            </a>
+	</div>
 
-            <span class="project-title">Star War Game</span>
-          </div>
-        </li>
+	<div class="container-fluid">
 
-        <li class="box">
-          <div>
-            <a href="https://github.com/powusu6128/TriviaGame">
-                <img class="project" src="assets/images/trivia-game.jpg" alt="Trivia">
-            </a>
+		<div class="row">
 
-            <span class="project-title">Trivia-Game</span>
-          </div>
-        </li>
+			<div class="col-md-8 well">
 
-        <li class="box">
-          <div>
-            <a href="https://github.com/powusu6128/week-4-game-1/blob/master/index.html">
-                <img class="project" src="assets/images/set-up.jpg" alt="set-up pic">
+				<div class="page-header">
 
-            </a>
+					<h1>Portfolio</h1>
 
-            <span class="project-title">Crystat-Value-Game</span>
-          </div>
-        </li>
+				</div>
 
-        <li class="box">
-          <div>
-            <img class="project" src="assets/images/images.jpg" alt="set-up pic">
-            <span class="project-title">Brain Game</span>
-          </div>
-        </li>
+				<div class="row">
 
-        <li class="box">
-          <div>
-            <img class="project" src="assets/images/favourit_game.jpg" alt="set-up pic">
-            <span class="project-title">Favourite Game</span>
-          </div>
-        </li>
+					<div class="col-md-6">
 
-      </ul>
+						<img class="img-thumbnail project" src="assets/images/crytalCollector.png" alt="Project 1">
+						<span class="project-title">Crystal Collector</span>
 
-    </section>
+					</div>
 
-    <section id="services">
+					<div class="col-md-6">
 
-      <h3>Connect with Me</h3>
+						<a href="https://github.com/powusu6128/Giphy_App">
 
-      <ul>
+							<img class="img-thumbnail project" src="assets/images/giphyApp.png" alt="Project 1">
+							<span class="project-title">GiphyApp</span>
+						</a>
 
-        <li class="move-left">
-          <a href="#">
-            <img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Info">
-          </a>
-        </li>
+					</div>
 
-        <li class="move-left">
-          <a href="#">
-            <img class="icon" src="assets/images/stackoverflow-icon.png" alt="StackOverflow Info">
-          </a>
-        </li>
-        <li class="move-left">
-          <a href="https://github.com/powusu6128">
-            <img class="icon" src="assets/images/github-icon.png" alt="GitHub Info">
-          </a>
-        </li>
-      </ul>
+				</div>
 
-    </section>
+				<div class="row">
 
-  </div>
+					<div class="col-md-6">
 
-  <footer>&#169; Copyright March 2018 Philip Owusu</footer>
+						<a href="https://github.com/powusu6128/Psychic-Game">
+							<img class="img-thumbnail project" src="assets/images/psychic-game.png" alt="Project 1">
+							<span class="project-title">Psychic Game</span>
+						</a>
 
+					</div>
+
+					<div class="col-md-6">
+
+						<a href="https://github.com/powusu6128/star-war">
+
+							<img class="img-thumbnail project" src="assets/images/starWar.png" alt="Project 1">
+							<span class="project-title">Star War Game</span>
+
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+
+						<a href="https://github.com/powusu6128/TrainSchedular">
+
+							<img class="img-thumbnail project" src="assets/images/trainSchedular.png   " alt="Project 1">
+							<span class="project-title">Train Schedular</span>
+						</a>
+
+
+					</div>
+
+					<div class="col-md-6">
+
+						<a href="https://github.com/powusu6128/TriviaGame">
+
+							<img class="img-thumbnail project" src="assets/images/triviaGame.png   " alt="Project 1">
+							<span class="project-title">Trivia Game</span>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<div class="row">
+
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+
+							<div class="panel-heading">
+
+								<h3 class="panel-title">Connect with Me</h3>
+
+							</div>
+
+							<div class="panel-body">
+
+								<ul class="list-group list-inline">
+
+									<li class="list-group-item">
+										<a href="https://github.com/powusu6128">
+											<img class="icon" src="assets/images/github-icon.png" alt="GitHub Profile">
+										</a>
+									</li>
+
+									<li class="list-group-item">
+										<a href="https://www.linkedin.com/in/philip-owusu-850a50146">
+											<img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Profile">
+										</a>
+									</li>
+
+									<li class="list-group-item">
+										<a href="https://stackoverflow.com/users/2816867/powusu6128">
+											<img class="icon" src="assets/images/stackoverflow-icon.png" alt="StackOverflow Profile">
+										</a>
+									</li>
+
+								</ul>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-sm-12">
+						<div>
+							<h3 class="penel-title">Milestone project</h3>
+						</div>
+
+						<div>
+							<a href="https://github.com/tarose412/Travel-Route-Itinerary">
+
+								<img class="img-thumbnail project" src="assets/images/roodRover_project.png" alt="Project 1">
+								<span class="project-title">Road Rover Project</span>
+
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="footer-fixed">
+
+		<footer class="footer bg-dark">
+
+			<div class="container text-center">
+
+				<span class="text-muted">
+
+					&#169; Copyright Philip Owusu 2018
+
+				</span>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	    crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	    crossorigin="anonymous"></script>
+</body>
 
 </html>

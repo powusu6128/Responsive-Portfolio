@@ -4,112 +4,211 @@
 
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Document responsive across devices. -->
 
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact Info</title>
+    <!-- Latest compiled and minified CSS -->
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- Document's character set. -->
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta charset="UTF-8">
+
+    <title>My Portfolio</title>
+
+    <!-- Linking CSS -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Linking Google Fonts -->
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
 </head>
 
 <body>
 
-  <div class="header-container">
+    <div class="header">
 
-    <header>Philip Owusu</header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
 
-    <nav>
+            <div class="card">
+                <a href="index.html">
 
-      <ul>
+                    <img class="btn btn-primary" src="assets/images/logo.png" alt="logo not available">
 
-        <li class="border-guide">
-          <a href="index.html">About</a>
-        </li>
-
-        <li class="border-guide">
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-
-        <li class="border-guide">
-          <a href="contact.html">Contact</a>
-        </li>
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-  <div class="main-container">
-
-    <section id="contact-form">
-
-      <h2>Contact</h2>
-
-      <form id="contact" action="login.php" method="post">
-
-        <label for="name">Name</label>
-        <br>
-
-        <input id="name" type="text" autocomplete="username" placeholder="Enter your name" required>
-        <br>
-
-        <label for="email">Email</label>
-        <br>
-
-        <input id="email" type="email" name="email" autocomplete="email" placeholder="Enter your email" required>
-        <br>
-
-        <label for="textfield">Message</label>
-        <br>
-
-        <textarea id="textfield" rows="15"></textarea>
-        <br>
-
-        <button class="button" type="submit" name="submit">Submit</button>
-
-      </form>
-
-    </section>
+                </a>
+            </div>
 
 
 
-    <section id="services">
+            <a href="index.html" class="navbar-brand">
+                <h1>Philip Owusu</h1>
+            </a>
 
-      <h3>Connect with Me</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_example">
 
-      <ul>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <li class="move-left">
-          <a href="#">
-            <img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn info">
-          </a>
-        </li>
+            <div class="navbar-collapse collapse justify-content-stretch" id="navbar_example">
 
-        <li class="move-left">
-          <a href="#">
-            <img class="icon" src="assets/images/stackoverflow-icon.png" alt="stackoverflow-icon info">
-          </a>
-        </li>
+                <ul class="navbar-nav ml-auto">
 
-        <li class="move-left">
-          <a href="https://github.com/powusu6128">
-            <img class="icon" src="assets/images/github-icon.png" alt="GitHub info">
-          </a>
-        </li>
+                    <li class="nav-link active">
 
-      </ul>
+                        <a class="nav-item" href="index.html">About
+                            <span class="sr-only">(current)</span>
+                        </a>
 
-    </section>
+                    </li>
 
-  </div>
+                    <li class="nav-link">
 
-  <footer>&#169; Copyright March 2018 Philip Owusu</footer>
+                        <a class="nav-item" href="contact.html">Contact</a>
 
+                    </li>
+
+                    <li class="nav-link">
+
+                        <a class="nav-item" href="portfolio.html">Portfolio</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--End navigation-->
+
+    </div>
+    <!--End navigation-->
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-8 well">
+
+                <div class="page-header">
+
+                    <h1>Contact</h1>
+
+                </div>
+
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label for="name">Name</label>
+
+                        <input type="text" class="form-control" id="name" placeholder="Philip Owusu">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="exampleInputEmail1">Email address</label>
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="powusu6128@gmail.com">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="textarea">Message</label>
+
+                        <textarea id="textarea" class="form-control" rows="10"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-default btn-lg">Submit</button>
+
+                </form>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">Connect with Me</h3>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <ul class="list-group list-inline">
+
+                            <li class="list-group-item">
+                                <a href="https://github.com/powusu6128">
+                                    <img class="icon" src="assets/images/github-icon.png" alt="GitHub Profile">
+                                </a>
+                            </li>
+
+                            <li class="list-group-item">
+                                <a href="https://www.linkedin.com/in/philip-owusu-850a50146">
+                                    <img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Profile">
+                                </a>
+                            </li>
+
+                            <li class="list-group-item">
+                                <a href="https://stackoverflow.com/users/2816867/powusu612">
+                                    <img class="icon" src="assets/images/stackoverflow-icon.png" alt="StackOverflow Profile">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div id="footer-fixed">
+
+        <footer class="footer bg-dark">
+
+            <div class="container text-center">
+
+                <span class="text-muted">
+
+                    &#169; Copyright Philip Owusu 2018
+
+                </span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

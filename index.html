@@ -4,123 +4,236 @@
 
 <head>
 
+    <!-- Document responsive across devices. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- Document's character set. -->
 
     <meta charset="UTF-8">
 
     <title>My Portfolio</title>
 
+    <!-- Linking CSS -->
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Linking Google Fonts -->
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/"
-        crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div class="logo-container">
-            <i class="fab fa-earlybirds"></i>
-    </div>
+    <div class="header">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
+
+            <div class="card">
+                <a href="index.html">
+
+                    <img class="btn btn-primary" src="assets/images/logo.png" alt="logo not available">
+
+                </a>
+            </div>
 
 
 
-    <div class="header-container">
+            <a href="index.html" class="navbar-brand">
+                <h1>Philip Owusu</h1>
+            </a>
 
-        <header>Philip Owusu</header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_example">
 
-        <nav>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul>
+            <div class="navbar-collapse collapse justify-content-stretch" id="navbar_example">
 
-                <li class="border">
-                    <a href="index.html">About</a>
-                </li>
+                <ul class="navbar-nav ml-auto">
 
-                <li class="border">
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
+                    <li class="nav-link active">
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                        <a class="nav-item" href="index.html">About
+                            <span class="sr-only">(current)</span>
+                        </a>
 
-            </ul>
+                    </li>
 
+                    <li class="nav-link">
+
+                        <a class="nav-item" href="contact.html">Contact</a>
+
+                    </li>
+
+                    <li class="nav-link">
+
+                        <a class="nav-item" href="portfolio.html">Portfolio</a>
+
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-    </div>
-
-
-    <div class="main-container">
-
-        <section id="main-bio">
-
-            <h2>About Me</h2>
-
-            <img id="bio-image" src="assets/images/philip_pic.jpg" alt="Philip Owusu">
-
-            <p>
-
-                When a modern operating system wants to start running a program, it creates a new process. A process is a program that is
-                currently executing. Every process has at least one thread running within it. Sometimes threads are referred
-                to as lightweight processes. A thread is a path of code execution through a program, and each thread has
-                its own local variables, program counter (pointer to the current instruction being executed), and lifetime.
-                Most modern operating systems allow more than one thread to be running concurrently within a process. When
-                the Java Virtual Machine (JavaVM, or just VM) is started by the operating system, a new process is created.
-                Within that process, many threads can be spawned (created).
-            </p>
-
-        </section>
-
-        <section id="services">
-
-            <h3>Connect with Me</h3>
-
-            <ul>
-
-                <li>
-                    <a href="https://LinkedIn.com/powusu6128@gmail.com">
-                        <img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Info">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://stackoverflow.com/users/2816867/powusu6128">
-                        <img class="icon" src="assets/images/stackoverflow-icon.png" alt="StackOverflow Info">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/powusu6128">
-                        <img class="icon" src="assets/images/github-icon.png" alt="GitHub Profile">
-                    </a>
-                </li>
-
-            </ul>
-
-        </section>
-
-        <section id="projects">
-            <a href="https://github.com/tarose412/Travel-Route-Itinerary">
-                <h3>Projects</h3>
-                <p>
-                    This project was done base on motivation of my of my class mate.
-                </p>
-                <img src="" alt="alt">
-            </a>
-            <br>
-
-
-        </section>
+        <!--End navigation-->
 
     </div>
 
 
+    <div class="container-fluid">
 
-    <footer>&#169; Copyright March 2018 Philip Owusu</footer>
+        <div class="row">
 
+            <div class="col-md-8 well">
+
+                <div class="page-header">
+
+                    <h1>About Me</h1>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-md-4">
+
+                        <img class="img-thumbnail pull-left" src="assets/images/philip_pic.jpg" alt="Bio picture">
+
+                    </div>
+
+                    <div class="col-sm-8 col-md-8">
+
+                        <p>
+
+                            I've been interested in chemical engineering since high school. I have a great desire to learn, and during my internship
+                            with XYZ Corporation, I was able to successfully take what I learned in the classroom and apply
+                            it to my work assignments. I enjoy team projects and have successfully led some of these projects.
+                            I'm very proud of the honors our team earned during Engineering Week on campus. Everything I've
+                            read about your company and what I've learned about this position during my interview has only
+                            reinforced my desire to work here. I'm very focused and I believe I have what it takes to be
+                            successful in this position."
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+
+                                <h3 class="panel-title">Connect with Me</h3>
+
+                            </div>
+
+                            <div class="panel-body">
+
+                                <ul class="list-group list-inline">
+
+                                    <li class="list-group-item">
+                                        <a href="https://github.com/powusu6128">
+                                            <img class="icon" src="assets/images/github-icon.png" alt="github">
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://www.linkedin.com/in/philip-owusu-850a50146">
+                                            <img class="icon" src="assets/images/linkedin-icon.png" alt="LinkedIn Profile">
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="https://stackoverflow.com/users/2816867/powusu6128">
+                                            <img class="icon" src="assets/images/stackoverflow-icon.png" alt="StackOverflow Profile">
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+
+                                <h3 class="project-panel-title">Mile Stone Project(s)</h3>
+
+                            </div>
+
+                            <div class="panel-body">
+
+                                <ul class="list-group list-inline">
+
+                                    <li class="img-thumbnail project">
+                                        <a href="https://github.com/powusu6128">
+                                            <img class="project" src="assets/images/roodRover_project.png "alt="github">
+                                            <span class="project-title">RoadRover project</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer-fixed">
+
+        <footer class="footer bg-dark">
+
+            <div class="container text-center">
+
+                <span class="text-muted">
+
+                    &#169; Copyright Philip Owusu 2018
+
+                </span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
